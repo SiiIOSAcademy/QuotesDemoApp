@@ -11,6 +11,14 @@
 		F70043AB2865F71B003CE737 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043AA2865F71B003CE737 /* ContentView.swift */; };
 		F70043AD2865F71C003CE737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70043AC2865F71C003CE737 /* Assets.xcassets */; };
 		F70043B02865F71C003CE737 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70043AF2865F71C003CE737 /* Preview Assets.xcassets */; };
+		F70043B72865F7F9003CE737 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043B62865F7F9003CE737 /* QuotesViewModel.swift */; };
+		F70043BA2865F827003CE737 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043B92865F827003CE737 /* Quote.swift */; };
+		F70043BE2865F854003CE737 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043BC2865F854003CE737 /* MainRouter.swift */; };
+		F70043BF2865F854003CE737 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043BD2865F854003CE737 /* Presenter.swift */; };
+		F70043C22865F863003CE737 /* UIScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043C02865F863003CE737 /* UIScrollViewViewController.swift */; };
+		F70043C32865F863003CE737 /* UIScrollViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043C12865F863003CE737 /* UIScrollViewWrapper.swift */; };
+		F70043C82865F8AC003CE737 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043C62865F8AC003CE737 /* QuoteView.swift */; };
+		F70043CC2865F93A003CE737 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70043CB2865F93A003CE737 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		F70043AA2865F71B003CE737 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F70043AC2865F71C003CE737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70043AF2865F71C003CE737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F70043B62865F7F9003CE737 /* QuotesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		F70043B92865F827003CE737 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		F70043BC2865F854003CE737 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		F70043BD2865F854003CE737 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		F70043C02865F863003CE737 /* UIScrollViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewViewController.swift; sourceTree = "<group>"; };
+		F70043C12865F863003CE737 /* UIScrollViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewWrapper.swift; sourceTree = "<group>"; };
+		F70043C62865F8AC003CE737 /* QuoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		F70043CB2865F93A003CE737 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				F70043A82865F71B003CE737 /* QuotesDemoAppApp.swift */,
-				F70043AA2865F71B003CE737 /* ContentView.swift */,
+				F70043CE2865F954003CE737 /* Service */,
+				F70043C42865F869003CE737 /* PageScrollView */,
+				F70043BB2865F82D003CE737 /* Model */,
+				F70043CD2865F94B003CE737 /* View */,
+				F70043B82865F806003CE737 /* ViewModel */,
 				F70043AC2865F71C003CE737 /* Assets.xcassets */,
 				F70043AE2865F71C003CE737 /* Preview Content */,
 			);
@@ -65,6 +85,50 @@
 				F70043AF2865F71C003CE737 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F70043B82865F806003CE737 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F70043B62865F7F9003CE737 /* QuotesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F70043BB2865F82D003CE737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F70043B92865F827003CE737 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F70043C42865F869003CE737 /* PageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F70043C02865F863003CE737 /* UIScrollViewViewController.swift */,
+				F70043C12865F863003CE737 /* UIScrollViewWrapper.swift */,
+			);
+			path = PageScrollView;
+			sourceTree = "<group>";
+		};
+		F70043CD2865F94B003CE737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F70043AA2865F71B003CE737 /* ContentView.swift */,
+				F70043C62865F8AC003CE737 /* QuoteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F70043CE2865F954003CE737 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F70043CB2865F93A003CE737 /* NetworkManager.swift */,
+				F70043BC2865F854003CE737 /* MainRouter.swift */,
+				F70043BD2865F854003CE737 /* Presenter.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70043BF2865F854003CE737 /* Presenter.swift in Sources */,
+				F70043C82865F8AC003CE737 /* QuoteView.swift in Sources */,
+				F70043CC2865F93A003CE737 /* NetworkManager.swift in Sources */,
+				F70043BE2865F854003CE737 /* MainRouter.swift in Sources */,
+				F70043BA2865F827003CE737 /* Quote.swift in Sources */,
 				F70043AB2865F71B003CE737 /* ContentView.swift in Sources */,
+				F70043B72865F7F9003CE737 /* QuotesViewModel.swift in Sources */,
+				F70043C32865F863003CE737 /* UIScrollViewWrapper.swift in Sources */,
+				F70043C22865F863003CE737 /* UIScrollViewViewController.swift in Sources */,
 				F70043A92865F71B003CE737 /* QuotesDemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
